@@ -1,0 +1,171 @@
+.whySection {
+  background-color: var(--bg-light);
+  padding: 120px 0;
+  border-bottom: 1px solid var(--glass-border-dark);
+  position: relative;
+  z-index: 10;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.stickyCol {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text-dark-muted);
+  margin-bottom: 40px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.statCard {
+  padding: 24px 20px;
+  border-radius: 12px;
+  background-color: var(--bg-navy-card);
+  border: 1px solid var(--glass-border-dark);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.statCard:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.02);
+  box-shadow: var(--shadow-md);
+}
+
+.statNum {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-light);
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dark-muted);
+}
+
+.gridCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.advantageCard {
+  display: flex;
+  gap: 24px;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid var(--glass-border-dark);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--bg-navy-card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.advantageCard:hover {
+  transform: translateX(6px);
+  border-color: rgba(255, 255, 255, 0.22);
+  background-color: rgba(255, 255, 255, 0.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border-dark);
+  color: var(--text-light);
+  flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advantageCard:hover .iconWrapper {
+  background: linear-gradient(135deg, var(--color-accent-start) 0%, var(--color-primary) 100%);
+  color: #000000;
+  border-color: transparent;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-dark-muted);
+}
+
+@media (max-width: 1200px) {
+  .whyGrid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .whyGrid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .stickyCol {
+    position: static;
+  }
+  
+  .whySection {
+    padding: 90px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .advantageCard {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+  }
+  
+  .statCard {
+    padding: 20px;
+  }
+}

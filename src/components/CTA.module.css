@@ -1,0 +1,125 @@
+.ctaSection {
+  background-color: var(--bg-navy);
+  padding: 120px 0;
+  border-bottom: 1px solid var(--glass-border-dark);
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.glowCenter {
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45vw;
+  height: 45vw;
+  background-color: rgba(37, 99, 235, 0.15);
+}
+
+.ctaCard {
+  background: radial-gradient(ellipse at top right, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.05) 50%, rgba(9, 13, 22, 0.9) 100%);
+  border: 1px solid var(--glass-border-dark);
+  border-radius: 24px;
+  padding: 80px 40px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-xl);
+}
+
+.iconWrapper {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border-dark);
+  color: var(--color-accent-start);
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.2);
+  animation: logoFloat 4s ease-in-out infinite;
+}
+
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+  max-width: 780px;
+  line-height: 1.2;
+}
+
+.ctaDescription {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--text-light-muted);
+  margin-bottom: 36px;
+  max-width: 620px;
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ctaActions a {
+  padding: 14px 36px;
+  font-size: 1rem;
+}
+
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 992px) {
+  .ctaSection {
+    padding: 90px 0;
+  }
+  
+  .ctaCard {
+    padding: 60px 30px;
+  }
+  
+  .ctaTitle {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ctaCard {
+    padding: 50px 20px;
+    border-radius: 20px;
+  }
+  
+  .ctaTitle {
+    font-size: 1.8rem;
+  }
+  
+  .ctaDescription {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+  
+  .ctaActions {
+    flex-direction: column;
+  }
+  
+  .ctaActions a {
+    width: 100%;
+  }
+}

@@ -1,0 +1,123 @@
+.trustedSection {
+  padding: 50px 0;
+  background-color: var(--bg-navy);
+  border-bottom: 1px solid var(--glass-border-dark);
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-light-muted);
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+.marqueeContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+/* Gradient fades on edges */
+.marqueeContainer::before,
+.marqueeContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeContainer::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-navy) 0%, transparent 100%);
+}
+
+.marqueeContainer::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-navy) 0%, transparent 100%);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  gap: 80px;
+  animation: marqueeLoop 25s linear infinite;
+}
+
+.partnerLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-light-muted);
+  opacity: 0.45;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.partnerLogo:hover {
+  opacity: 0.95;
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+.logoSymbol {
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-accent-start) 0%, var(--color-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  animation: logoPulse 2s ease-in-out infinite;
+}
+
+.logoText {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+@keyframes marqueeLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .trustedSection {
+    padding: 40px 0;
+  }
+  
+  .marqueeTrack {
+    gap: 50px;
+  }
+  
+  .logoText {
+    font-size: 1.1rem;
+  }
+}
