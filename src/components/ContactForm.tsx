@@ -42,7 +42,7 @@ export default function ContactForm() {
             </div>
             <div>
               <span className={styles.itemLabel}>Email Us</span>
-              <a href="mailto:info@shahisolutions.com" className={styles.itemVal}>info@shahisolutions.com</a>
+              <a href="mailto:request.sdec@gmail.com" className={styles.itemVal}>request.sdec@gmail.com</a>
             </div>
           </li>
           <li className={styles.contactItem}>
@@ -50,8 +50,8 @@ export default function ContactForm() {
               <Phone size={20} />
             </div>
             <div>
-              <span className={styles.itemLabel}>Call Us</span>
-              <a href="tel:+1234567890" className={styles.itemVal}>+1 (234) 567-890</a>
+              <span className={styles.itemLabel}>Phone & WhatsApp</span>
+              <a href="tel:+917356190621" className={styles.itemVal}>73561 90621 (Call/Chat)</a>
             </div>
           </li>
           <li className={styles.contactItem}>
@@ -60,7 +60,7 @@ export default function ContactForm() {
             </div>
             <div>
               <span className={styles.itemLabel}>Visit Office</span>
-              <span className={styles.itemVal}>123 Enterprise Suite, Silicon Valley, CA</span>
+              <span className={styles.itemVal}>2105, F1, T2, Hilite Business Park, Palazhi, Calicut, Kerala - 673016</span>
             </div>
           </li>
         </ul>

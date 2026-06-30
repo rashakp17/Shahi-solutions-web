@@ -1,5 +1,6 @@
-import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import TechAnimation from './TechAnimation';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -21,25 +22,18 @@ export default function Hero() {
             We design, develop, and deliver state-of-the-art web products, custom software, ERP integrations, and mobile applications that drive business agility and exponential growth.
           </p>
           <div className={styles.heroActions}>
-            <a href="#cta" className="btn btn-accent">
+            <Link href="/contact" className="btn btn-accent">
               Get Started <ArrowRight size={18} />
-            </a>
-            <a href="#projects" className="btn btn-secondary">
+            </Link>
+            <Link href="/projects" className="btn btn-secondary">
               View Our Projects
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className={styles.heroVisual}>
-          <div className={styles.imageWrapper}>
-            <Image 
-              src="/hero-illustration.png" 
-              alt="Digital transformation and software engineering workspace illustration" 
-              width={620} 
-              height={520} 
-              priority
-              className={styles.heroImage}
-            />
+          <div className={styles.animationWrapper}>
+            <TechAnimation />
           </div>
         </div>
       </div>

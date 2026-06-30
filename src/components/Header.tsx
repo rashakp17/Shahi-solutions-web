@@ -9,7 +9,7 @@ import styles from './Header.module.css';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
@@ -25,7 +25,7 @@ export default function Header() {
     
     // Load persisted theme
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    const initialTheme = savedTheme || 'dark';
+    const initialTheme = savedTheme || 'light';
     setTheme(initialTheme);
     document.documentElement.setAttribute('data-theme', initialTheme);
 

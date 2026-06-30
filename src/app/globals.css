@@ -1,58 +1,5 @@
 :root {
-  /* Default Theme - Obsidian Black */
-  --bg-navy: #000000;
-  --bg-navy-card: rgba(10, 10, 10, 0.75);
-  --bg-light: #030303;
-  --bg-light-alt: #070707;
-  --bg-footer: #05080e;
-  --bg-social: rgba(255, 255, 255, 0.03);
-  
-  --text-dark: #f5f5f7;
-  --text-dark-muted: #86868b;
-  --text-light: #ffffff;
-  --text-light-muted: #a1a1a6;
-  
-  --color-primary: #ffffff;
-  --color-primary-hover: #e2e8f0;
-  --color-accent-start: #8e8e93; /* Silver */
-  --color-accent-end: #ffffff;   /* Metallic White */
-  
-  /* Buttons */
-  --color-btn-bg: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
-  --color-btn-text: #000000;
-  --color-btn-bg-hover: #ffffff;
-  
-  /* Glassmorphism */
-  --glass-bg-dark: rgba(0, 0, 0, 0.75);
-  --glass-bg-light: rgba(5, 5, 5, 0.75);
-  --glass-border-dark: rgba(255, 255, 255, 0.06);
-  --glass-border-light: rgba(255, 255, 255, 0.05);
-  
-  /* Shadows & Glows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.7);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.8);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.9);
-  --shadow-glow: 0 0 30px rgba(255, 255, 255, 0.05);
-  --shadow-accent-glow: 0 0 35px rgba(255, 255, 255, 0.08);
-  --shadow-btn: 0 4px 14px 0 rgba(255, 255, 255, 0.1);
-  --shadow-btn-hover: 0 6px 20px 0 rgba(255, 255, 255, 0.2);
-  --color-card-shadow: rgba(0, 0, 0, 0.5);
-  
-  /* Tech Tags */
-  --color-tag-bg: rgba(255, 255, 255, 0.03);
-  --color-tag-border: rgba(255, 255, 255, 0.08);
-  --color-tag-text: #a1a1a6;
-  --color-tag-bg-hover: rgba(255, 255, 255, 0.06);
-  --color-tag-border-hover: rgba(255, 255, 255, 0.18);
-
-  /* Fonts */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Outfit', var(--font-sans);
-}
-
-/* Light Slate Theme */
-[data-theme="light"] {
+  /* Default Theme - Light Slate */
   --bg-navy: #f8fafc;
   --bg-navy-card: #ffffff;
   --bg-light: #ffffff;
@@ -98,6 +45,59 @@
   --color-tag-text: #475569;
   --color-tag-bg-hover: rgba(15, 23, 42, 0.06);
   --color-tag-border-hover: rgba(15, 23, 42, 0.15);
+
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', var(--font-sans);
+}
+
+/* Dark Theme - Obsidian Black */
+[data-theme="dark"] {
+  --bg-navy: #000000;
+  --bg-navy-card: rgba(10, 10, 10, 0.75);
+  --bg-light: #030303;
+  --bg-light-alt: #070707;
+  --bg-footer: #05080e;
+  --bg-social: rgba(255, 255, 255, 0.03);
+  
+  --text-dark: #f5f5f7;
+  --text-dark-muted: #86868b;
+  --text-light: #ffffff;
+  --text-light-muted: #a1a1a6;
+  
+  --color-primary: #ffffff;
+  --color-primary-hover: #e2e8f0;
+  --color-accent-start: #8e8e93; /* Silver */
+  --color-accent-end: #ffffff;   /* Metallic White */
+  
+  /* Buttons */
+  --color-btn-bg: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  --color-btn-text: #000000;
+  --color-btn-bg-hover: #ffffff;
+  
+  /* Glassmorphism */
+  --glass-bg-dark: rgba(0, 0, 0, 0.75);
+  --glass-bg-light: rgba(5, 5, 5, 0.75);
+  --glass-border-dark: rgba(255, 255, 255, 0.06);
+  --glass-border-light: rgba(255, 255, 255, 0.05);
+  
+  /* Shadows & Glows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.8);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.9);
+  --shadow-glow: 0 0 30px rgba(255, 255, 255, 0.05);
+  --shadow-accent-glow: 0 0 35px rgba(255, 255, 255, 0.08);
+  --shadow-btn: 0 4px 14px 0 rgba(255, 255, 255, 0.1);
+  --shadow-btn-hover: 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+  --color-card-shadow: rgba(0, 0, 0, 0.5);
+  
+  /* Tech Tags */
+  --color-tag-bg: rgba(255, 255, 255, 0.03);
+  --color-tag-border: rgba(255, 255, 255, 0.08);
+  --color-tag-text: #a1a1a6;
+  --color-tag-bg-hover: rgba(255, 255, 255, 0.06);
+  --color-tag-border-hover: rgba(255, 255, 255, 0.18);
 }
 
 /* Base Styles */

@@ -19,7 +19,7 @@ export default function CTA() {
             Partner with Shahi Solutions to design, engineer, and deploy high-performance custom applications, websites, and business automations tailored to your scale.
           </p>
           <div className={styles.ctaActions}>
-            <a href="mailto:info@shahisolutions.com" className="btn btn-accent">
+            <a href="mailto:request.sdec@gmail.com" className="btn btn-accent">
               Let's Build Your Next Project <ArrowRight size={18} />
             </a>
           </div>
