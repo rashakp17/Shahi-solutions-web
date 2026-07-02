@@ -178,7 +178,7 @@ export default function TechAnimation() {
           grad.addColorStop(1, colorEnd);
 
           ctx.strokeStyle = grad;
-          ctx.lineWidth = isDark ? 1.6 : 1.2;
+          ctx.lineWidth = isDark ? 2.4 : 1.8;
           ctx.stroke();
         }
 
@@ -211,7 +211,7 @@ export default function TechAnimation() {
             grad.addColorStop(1, color2);
 
             ctx.strokeStyle = grad;
-            ctx.lineWidth = isDark ? 1.4 : 1.0;
+            ctx.lineWidth = isDark ? 2.0 : 1.4;
             ctx.stroke();
           }
         }
