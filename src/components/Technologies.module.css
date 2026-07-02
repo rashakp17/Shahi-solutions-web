@@ -107,7 +107,7 @@
   .techGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .techSection {
     padding: 90px 0;
   }
@@ -119,7 +119,7 @@
     max-width: 400px;
     margin: 0 auto;
   }
-  
+
   .techCard {
     padding: 24px;
   }

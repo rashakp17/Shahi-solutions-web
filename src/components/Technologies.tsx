@@ -17,7 +17,7 @@ export default function Technologies() {
     <section className={`dark-section ${styles.techSection}`} id="technologies">
       {/* Decorative Glow */}
       <div className={`glow-effect ${styles.glowLeft}`}></div>
-      
+
       <div className="container">
         <div className={styles.sectionHeader}>
           <div className="badge">Technologies We Use</div>
@@ -29,8 +29,8 @@ export default function Technologies() {
 
         <div className={styles.techGrid}>
           {techs.map((tech, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className={styles.techCard}
               style={{ '--hover-color': tech.color } as React.CSSProperties}
             >
